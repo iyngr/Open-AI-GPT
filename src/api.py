@@ -1,7 +1,7 @@
 import os
 from openai import OpenAI
 
-with open("src/.env") as env:
+with open(".env") as env:
     for line in env:
         key, value = line.strip().split("=")
         os.environ[key] = value
